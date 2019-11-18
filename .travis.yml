@@ -8,3 +8,15 @@ before_install:
 
 script:
   - docker run -e CI=true dsmithhcm/docker-react npm run test
+
+# deploy:
+  # provider: "elasticbeanstalk"
+  # region: "us-east2"
+  # app: "docker"
+  # env: "Docker-env"
+  # bucket_name: "insert-s3_bucket"
+  # bucket_path: "docker"
+  # access_key_id: "$access_key"
+  # secret_access_key: "$secret_key"
+  # on:
+    # branch: origin
